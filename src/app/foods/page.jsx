@@ -4,6 +4,12 @@ import CartItems from './CartItems';
 import InputSearch from '@/components/Search/InputSearch';
 import style from './food.module.css'
 
+
+export const metadata = {
+  title: "All Foods",
+  description: "Best FastFood shop in Noakhali",
+};
+
 const getFoods=async(search)=>{
 
     const res=await fetch(`https://taxi-kitchen-api.vercel.app/api/v1/foods/random?search=${search}`,
