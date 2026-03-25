@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,6 +14,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
+const poppins=Poppins({
+  weight:["400","500","700"],
+  subsets: ["latin"],
+})
+
+
 export const metadata = {
   title:{
      default:"Yatun Khaijan",
@@ -25,7 +32,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${poppins.className} antialiased`}>
         <header className="px-5 py-2 flex items-center justify-between gap-5 bg-stone-800">
           <Link href="/">
             <Image src="/logo.png" alt="logo img" width={80} height={80}></Image>
