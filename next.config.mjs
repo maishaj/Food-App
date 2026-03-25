@@ -8,6 +8,10 @@ const nextConfig = {
         port: '',
         pathname: '/images/media/meals/**',
       },
+      {
+        protocol: "https",
+        hostname: "randomuser.me",
+      },
     ],
   }
 };
